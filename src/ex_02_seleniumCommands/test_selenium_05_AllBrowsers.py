@@ -19,18 +19,19 @@ def test_selenium_Ffirefox_Browser():
     print(driver.current_url)
     pageSource = driver.page_source
     assert "CURA Healthcare Service" in pageSource
-    time.sleep(10)
+    time.sleep(1)
     driver.quit()
 
 @allure.title("Print the page source in katalon page in chrome browser")
 def test_selenium_chrome_Browser():
-    driver = webdriver.Chrome()
+    chrome_options = Options()
+    driver = webdriver.Chrome(options=chrome_options)
     driver.get('https://katalon-demo-cura.herokuapp.com')
     print(driver.title)
     print(driver.current_url)
     pageSource = driver.page_source
     assert "CURA Healthcare Service" in pageSource
-    time.sleep(10)
+    time.sleep(1)
     driver.quit()
 
 @allure.title("Print the page source in katalon page in edge browser")
@@ -41,7 +42,7 @@ def test_selenium_edge_Browser():
     print(driver.current_url)
     pageSource = driver.page_source
     assert "CURA Healthcare Service" in pageSource
-    time.sleep(10)
+    time.sleep(1)
     driver.quit()
 
 @allure.title("Print the page source in katalon page in safari browser")
@@ -52,7 +53,7 @@ def test_selenium_safari_Browser():
     print(driver.current_url)
     pageSource = driver.page_source
     assert "CURA Healthcare Service" in pageSource
-    time.sleep(10)
+    time.sleep(1)
     driver.quit()
 
     # to run the testcases parallel, need to install: pip install pytest-xdist

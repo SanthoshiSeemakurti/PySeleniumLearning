@@ -22,7 +22,7 @@ def test_chrome_option():
     # chrome_options.add_argument("--window-size=1920x1080")
     # chrome_options.add_argument("--start-maximized")
 
-    driver = webdriver.Chrome(chrome_options)
+    driver = webdriver.Chrome(options= chrome_options)
     driver.get("https://katalon-demo-cura.herokuapp.com")
     print(driver.title)
     time.sleep(5)
