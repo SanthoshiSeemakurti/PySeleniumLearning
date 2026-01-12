@@ -10,11 +10,13 @@
 """
 import time
 
+import allure
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
-
+@allure.title("Katalon login negative Testcase")
+@allure.description("Verify Error message on the login page")
 def test_project_1_katalon_login_negative():
 
     # Initialize ChromeOptions
@@ -106,7 +108,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
-
+@allure.title("Katalon login Positive Testcase")
+@allure.description(" Verify current URL - [katalon-demo-cura.herokuapp.com/#appointment]")
 def test_project_1_katalon_login_positive():
     # Initialize ChromeOptions
     chrome_options = Options()
@@ -177,4 +180,4 @@ def test_project_1_katalon_login_positive():
     driver.quit()
 
     # to run the testcases parallel, need to install: pip install pytest-xdist
-    # to run: pytest -n auto src/ex_02_seleniumCommands/test_selenium_05_AllBrowsers.py
+    # to run: pytest -n auto src/ex_02_seleniumCommands/test_selenium_06_All_Browsers.py

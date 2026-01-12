@@ -10,11 +10,13 @@
 """
 import time
 
+import allure
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
-
+@allure.title("Katalon login Positive Testcase")
+@allure.description(" Verify current URL - [katalon-demo-cura.herokuapp.com/#appointment]")
 def test_project_1_katalon_login_positive():
 
     # Initialize ChromeOptions

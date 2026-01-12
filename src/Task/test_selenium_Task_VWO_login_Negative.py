@@ -1,5 +1,6 @@
 import time
 
+import allure
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -13,7 +14,8 @@ Mini Project #1 (Selenium)
 // Verify that the error message is shown "_**Your email, password, IP address or location did not match"**_
 
 """
-
+@allure.title("VWO login Negative Testcase")
+@allure.description(" Verify Error message on the login page")
 def test_chrome_option():
 
     # Initialize ChromeOptions
@@ -80,7 +82,7 @@ def test_chrome_option():
     data-qa="rixawilomi"
     >Your email, password, IP address or location did not match</div"""
 
-    errormessage= driver.find_element(By.ID,"js-notification-box-msg")
-    assert "Your email, password, IP address or location did not match" == errormessage.text
+    error_message= driver.find_element(By.ID,"js-notification-box-msg")
+    assert "Your email, password, IP address or location did not match" == error_message.text
 
     driver.quit()

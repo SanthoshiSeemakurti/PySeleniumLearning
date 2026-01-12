@@ -10,6 +10,7 @@ Mini Project #3 (Selenium)
 import time
 from typing import Any
 
+import allure
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -17,7 +18,8 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.wait import WebDriverWait
 
-
+@allure.title("IDRVE login Positive Testcase")
+@allure.description(" Verify 'Your free trial has expired!' in page_source_as_html")
 def test_verify_idrive_upgrade_message():
 
     # initialize chrome options

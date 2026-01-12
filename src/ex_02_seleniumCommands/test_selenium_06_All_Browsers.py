@@ -57,4 +57,4 @@ def test_selenium_safari_Browser():
     driver.quit()
 
     # to run the testcases parallel, need to install: pip install pytest-xdist
-    # to run: pytest -n auto src/ex_02_seleniumCommands/test_selenium_05_AllBrowsers.py
+    # to run: pytest -n auto src/ex_02_seleniumCommands/test_selenium_06_All_Browsers.py

@@ -1,9 +1,7 @@
 """
-Mini Project #1 (Selenium)
-
-// Locators - Find the Web elements
+// explore Options class of the web browser
 // Open the URL 'https://katalon-demo-cura.herokuapp.com'
-// Find page source: "CURA Healthcare Service" in page_source_as_html
+
 """
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager

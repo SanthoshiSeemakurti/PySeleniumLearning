@@ -4,17 +4,18 @@
 # 2. Find the **Make appointment** Button
 # 3. Click on the **Make appointment **Button
 # 4. Next Page will be loaded
-# 5. **Find and Enter **the details **Username and Password** and **Click** on the Login Button
-# 6. Verify current URL - [katalon-demo-cura.herokuapp.com/#appointment](https://katalon-demo-cura.herokuapp.com/#appointment)
-
+# 5. **Find and Enter **Wrong  details **Username and Password** and **Click** on the Login Button
+# 6. Verify the current Error message.
 """
 import time
 
+import allure
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
-
+@allure.title("Katalon login negative Testcase")
+@allure.description("Verify Error message on the login page")
 def test_project_1_katalon_login_negative():
 
     # Initialize ChromeOptions
