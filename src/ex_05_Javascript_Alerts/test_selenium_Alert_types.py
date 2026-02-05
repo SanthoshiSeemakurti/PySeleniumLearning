@@ -2,8 +2,6 @@
 Explore types of Alerts:
 Navigate to "https://the-internet.herokuapp.com/javascript_alerts"
 """
-from ftplib import all_errors
-
 import allure
 import pytest
 import time
